@@ -140,52 +140,47 @@ tr {
 }
 
 
+/* Common styles for all screen sizes */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-
-
-/* Mobile First Approach */
-@media only screen and (max-width: 768px) {
-  #menu,
-  #ytlogo {
-    height: 20px;
-    width: auto; /* Adjust width as needed */
-  }
-
-  #search {
-    margin-left: 0;
-    width: 100%;
-    margin-top: 10px; /* Adjust margin as needed */
-  }
-
-  .navbtn {
-    margin-left: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: smaller; /* Adjust font size as needed */
-  }
-
-  .thumbnail {
-    width: 100%; /* Display thumbnails in full width */
-    margin: 5px 0; /* Adjust margin as needed */
-  }
-
-  .thumbnail-content {
-    padding: 10px; /* Adjust padding as needed */
-  }
-
-  .thumbnail-image {
-    width: 100%; /* Ensure images take up full width */
-  }
-
-  .thumbnail-icon {
-    width: 15px; /* Adjust icon size as needed */
-  }
-
-  .text-wrapper span {
-    margin-left: 5px;
-    font-size: smaller; /* Adjust font size as needed */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
   }
 }
+
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  
+  #search {
+    margin-left: 20px;
+    width: 80%;
+  }
+  
+  #searchlogo,
+  #searchicon,
+  .lstqdiv,
+  .lstdiv,
+  .thumbnail {
+    margin-left: 0;
+  }
+}
+
 
 
 
